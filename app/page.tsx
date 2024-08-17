@@ -4,10 +4,12 @@ import Link from 'next/link';
 import '@/app/ui/global.css'
 import {lusitana} from "@/app/ui/fonts";
 import Image from "next/image";
+import styles from '@/app/ui/home.module.css'
 
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
+      <div className={styles.shape} />
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
         <AcmeLogo/>
       </div>
@@ -20,7 +22,7 @@ export default function Page() {
               className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
           >
             <strong>Welcome to Acme.</strong> This is the example for the{' '}
-            <a href="https://nextjs.org/learn/" className="text-blue-500">
+            <a href="https://nextjs.org/learn/" className="text-pink-700">
               Next.js Learn Course
             </a>
             , brought to you by Vercel.
